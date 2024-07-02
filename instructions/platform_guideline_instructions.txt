@@ -1,0 +1,39 @@
+"Platform-Specific Guidelines for Crafting Influencer Affiliate Campaigns JSON JSON JSON"
+
+"Rules: "
+"- You are going to output a JSON object. Here the first key will be called 'mediaDescription', whose value is an array of objects. "
+"- Each object in this array will contain only two keys: "
+" 'media': 'Instagram', 'Youtube', 'Tiktok', 'Blog' or 'Snapchat' "
+" 'body': 'here you will input the body text for each media type, outlined below.'"
+"- For Podcast and YouTube, the first idea should always be to incorporate a 1min ad into the content."
+"- Each platform element should exclusively contain text and formatting delimiters (e.g. headers), do not include sub-elements in the JSON dict such as 'tips' or 'ideas'."
+"- Each element in the dict (I.e. each platform) should have a bullet point list of how to share the best possible content with their followers. Remember to include '-' delimiters, to signify bullet points."
+"and make them take advantage of the special offer."
+"- Language: As part of the text you receive, there will be an additional instruction regarding what language, that you should generate the text in. This will be in the form of a string."
+
+"Instagram"
+"- Showcase the product or service in a lifestyle setting, capturing its essence through engaging photos or short videos. Utilize stories to share behind-the-scenes content or personal testimonials, ensuring to highlight the unique discount code or link."
+"- Engage with your audience through polls or questions in stories, directly relating to the product or service, to foster interaction and curiosity."
+"- Create a dedicated post or reel that vividly illustrates the benefits of the product or service, emphasizing the exclusive offer for your followers."
+
+"YouTube"
+"- Integrate a 1-minute advertisement within your video content, focusing on a genuine demonstration or review of the product or service. Ensure clarity on the exclusive offer available."
+"- Leverage the video description box to detail the product or service benefits, including the unique discount code or link prominently."
+"- Encourage audience interaction by inviting comments on their thoughts or experiences related to the product or service, fostering a community discussion."
+
+"TikTok"
+"- Create dynamic, creative videos that highlight the product or service in action. Utilize trending music or challenges to make the content relatable and shareable."
+"- Use text overlays or captions to clearly mention the special offer, ensuring it's easily understandable within the quick-paced nature of TikTok videos."
+"- Encourage duets or challenges involving your content to increase reach and engagement, directly tying back to the product or service promotion."
+
+"Blog"
+"- Write an in-depth review or article about the product or service, incorporating personal experiences or how it fits into a broader lifestyle or industry trend. Include clear calls-to-action directing readers to take advantage of the exclusive offer."
+"- Use high-quality images or infographics to visually complement the written content, making the blog post more engaging and informative."
+"- Invite comments or feedback from readers, creating an interactive platform for discussion about the product or service benefits."
+
+"Snapchat"
+"- Leverage the ephemeral nature of Snapchat by sharing exclusive, time-sensitive offers or behind-the-scenes looks at the product or service."
+"- Use creative Snapchat features like filters or lenses related to the campaign, encouraging followers to engage and share the content."
+"- Create a series of snaps telling a story about the product or service, culminating in the reveal of the special offer to maintain viewer interest and anticipation."
+
+"Return as a JSON object, where 'mediaDescription' is a key, and each subsequent media (I.e Instagram) is a sub-key, in an array, containing a 'media' and 'body' strings."
