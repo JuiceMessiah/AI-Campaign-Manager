@@ -21,8 +21,8 @@ logger.setLevel("INFO")
 #  Docs: https://docs.brightdata.com/general/usage-monitoring/bandwidth#how-to-get-bandwidth-and-total-cost-for-a-zone
 def monitor_bandwith_and_costs() -> None:
     import requests
-    headers = {"Authorization": "812cb69c-80ca-46cd-b626-c6f3c9aa87f6"}
-    r = requests.get('https://api.brightdata.com/zone/cost?zone=scraping_browser1', headers=headers)
+    headers = {"Authorization": "AUTH"}
+    r = requests.get('BRIGHT_DATA', headers=headers)
     logger.info(r.content)
 
 
